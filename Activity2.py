@@ -1,0 +1,42 @@
+print("Enter Marks Obtained in 5 subjects:")
+
+markOne = int(input())
+markTwo = int(input())
+markThree = int(input())
+markFour = int(input())
+markFive = int(input())
+
+total = markOne + markTwo + markThree + markFour + markFive
+average = int(total / 5)
+
+validRange = range(0, 101)
+
+if average not in validRange:
+    print("Invalid input!")
+
+elif average in range(91, 101): 
+    print("Your Grade is A1")
+
+elif average in range(81, 91):
+    print("Your Grade is A2")
+
+elif average in range(71, 81):
+    print("Your Grade is B1") 
+
+elif average in range(61, 71):
+    print("Your Grade is B2") 
+
+elif average in range(51, 61):
+    print("Your Grade is C1")
+
+elif average in range(41, 51):
+    print("Your Grade is C2")
+
+elif average in range(33, 41):
+    print("Your Grade is D")
+
+elif average in range(21, 33):
+    print("Your Grade is E1")
+
+else:
+    print("Your Grade is E2")                 
